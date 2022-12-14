@@ -1,0 +1,2 @@
+# notite
+Proiect JavaScrip TJA
