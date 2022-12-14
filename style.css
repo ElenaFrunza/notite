@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    margin:0;
+    background: linear-gradient(#ffffff6d, #ffffff51),  url("todo.webp");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: bottom right;
+}
+
+.centered {
+    text-align: center;
+}
+
+#main {
+    height: inherit;
+    padding-top:10px;
+    background: linear-gradient(#e5e5e5d5, #d8d8d800);
+}
+
+.notite {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+    row-gap: 40px;
+    padding: 20px 5%;
+}
+
+.notita {
+    padding: 5px 15px 10px 15px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.notita h3 {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.notita > textarea {
+    resize: none;
+    height: 150px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    padding:10px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.notita span {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+
+.save {
+    font-size: 14px;
+    margin-left: 4px;
+    margin-top: 4px;
+    border: 2px solid #7171b3;
+    float:right;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #7171b32b;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .notite {
+        padding: 30px 10px;
+        column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
